@@ -1,0 +1,8 @@
+# ASPI Benchmark — Dataset Construction Pipeline
+# Python >= 3.10 required
+
+# Core dependencies
+agentdojo
+openai==2.29.0
+python-dotenv
+tenacity

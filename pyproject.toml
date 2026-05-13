@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aspi"
+version = "0.1.0"
+description = "ASPI — Ambiguous State Prompt Injection benchmark, extending AgentDojo."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.0",
+    "python-dotenv>=1.0",
+    "tenacity>=8.0",
+    "tqdm>=4.65",
+    "matplotlib>=3.5",
+    "numpy>=1.24",
+    # AgentDojo is vendored at ./agentdojo and installed separately via:
+    #   pip install -e ./agentdojo
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
